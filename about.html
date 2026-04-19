@@ -1,5 +1,22 @@
-{% extends "layout.njk" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — DevStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" crossorigin href="/assets/style-Dx8-ShFZ.css">
+</head>
+<body>
+  <nav>
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+</nav>
+  <main class="main-content">
+    
 
 <section class="page-hero">
   <div class="section-container">
@@ -68,4 +85,18 @@
   </div>
 </section>
 
-{% endblock %}
+
+  </main>
+  <footer>
+  <p>© 2026 DevStudio. All rights reserved.</p>
+</footer>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
