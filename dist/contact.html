@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — DevStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" crossorigin href="/assets/style-Dx8-ShFZ.css">
+</head>
+<body>
+  <nav>
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+</nav>
+  <main class="main-content">
+    
+
+<section class="page-hero">
+  <div class="section-container">
+    <div class="section-label">Contact</div>
+    <h1 class="page-hero-title">Let's <span class="gradient-text">start a conversation</span></h1>
+    <p class="page-hero-sub">Have a question or want to work together? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="section-container contact-layout">
+    <div class="contact-form-side">
+      <h2 class="contact-form-title">Send us a message</h2>
+      <p class="contact-form-desc">Fill out the form and we'll get back to you within 24 hours.</p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group"><label for="firstName">First Name</label><input type="text" id="firstName" placeholder="John" required /></div>
+          <div class="form-group"><label for="lastName">Last Name</label><input type="text" id="lastName" placeholder="Doe" required /></div>
+        </div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@example.com" required /></div>
+        <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" placeholder="How can we help?" /></div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+        <div class="form-success" id="formSuccess">✅ Message sent! We'll be in touch soon.</div>
+      </form>
+    </div>
+    <div class="contact-info-side">
+      <h2 class="contact-info-title">Other ways to reach us</h2>
+      <p class="contact-info-desc">Prefer a different channel? We're available across all major platforms.</p>
+      <div class="contact-info-list">
+        <div class="contact-info-row"><div class="info-icon">📧</div><div class="info-text"><span class="info-label">EMAIL</span><span class="info-value">hello@devstudio.io</span><span class="info-sub">For general enquiries</span></div></div>
+        <div class="contact-info-row"><div class="info-icon">📞</div><div class="info-text"><span class="info-label">PHONE</span><span class="info-value">+1 (555) 000-1234</span><span class="info-sub">Mon–Fri, 9am – 6pm IST</span></div></div>
+        <div class="contact-info-row"><div class="info-icon">📍</div><div class="info-text"><span class="info-label">LOCATION</span><span class="info-value">Hyderabad, Telangana</span><span class="info-sub">India — IN 500081</span></div></div>
+        <div class="contact-info-row"><div class="info-icon">🐙</div><div class="info-text"><span class="info-label">GITHUB</span><span class="info-value">github.com/devstudio</span><span class="info-sub">Open source projects</span></div></div>
+        <div class="contact-info-row"><div class="info-icon">🔗</div><div class="info-text"><span class="info-label">LINKEDIN</span><span class="info-value">linkedin.com/in/devstudio</span><span class="info-sub">Professional network</span></div></div>
+        <div class="contact-info-row"><div class="info-icon">🐦</div><div class="info-text"><span class="info-label">TWITTER / X</span><span class="info-value">@devstudio_io</span><span class="info-sub">Updates and announcements</span></div></div>
+      </div>
+      <div class="contact-availability"><span class="availability-dot"></span><span>Available for new projects — response within 24h</span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const s = document.getElementById('formSuccess');
+    s.classList.add('visible');
+    e.target.reset();
+    setTimeout(() => s.classList.remove('visible'), 5000);
+  }
+</script>
+
+
+  </main>
+  <footer>
+  <p>© 2026 DevStudio. All rights reserved.</p>
+</footer>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

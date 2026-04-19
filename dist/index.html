@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — DevStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" crossorigin href="/assets/style-Dx8-ShFZ.css">
+</head>
+<body>
+  <nav>
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+</nav>
+  <main class="main-content">
+    
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">🚀 Welcome to DevStudio</div>
+    <h1 class="hero-title">Build beautiful<br /><span class="gradient-text">digital experiences</span></h1>
+    <p class="hero-subtitle">A modern multi-page website crafted with <strong>Vite</strong> and <strong>Nunjucks</strong> — fast, clean, and production-ready.</p>
+    <div class="hero-actions">
+      <a href="about.html" class="btn btn-primary">Learn More</a>
+      <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="visual-card card-1"><span class="visual-icon">🎨</span><span>Design</span></div>
+    <div class="visual-card card-2"><span class="visual-icon">⚡</span><span>Speed</span></div>
+    <div class="visual-card card-3"><span class="visual-icon">🛠️</span><span>Build</span></div>
+    <div class="visual-orb"></div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="section-container">
+    <div class="section-label">Why DevStudio</div>
+    <h2 class="section-title">Everything you need</h2>
+    <p class="section-subtitle">A carefully chosen stack for modern web development</p>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon">⚡</div><h3>Lightning Fast</h3><p>Powered by Vite's native ESM dev server for instant HMR and ultra-fast builds.</p></div>
+      <div class="feature-card"><div class="feature-icon">🧩</div><h3>Modular Templates</h3><p>Nunjucks keeps your HTML DRY with reusable layouts, partials, and macros.</p></div>
+      <div class="feature-card"><div class="feature-icon">📱</div><h3>Fully Responsive</h3><p>Mobile-first CSS ensures your site looks perfect on every screen size.</p></div>
+      <div class="feature-card"><div class="feature-icon">🎨</div><h3>Clean Design</h3><p>A minimal, modern aesthetic with consistent typography, spacing, and color.</p></div>
+      <div class="feature-card"><div class="feature-icon">📦</div><h3>Optimized Output</h3><p>Production builds are minified, tree-shaken, and chunked for optimal performance.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔧</div><h3>Easy to Extend</h3><p>Clean folder structure makes adding new pages or features effortless.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="stack-section">
+  <div class="section-container">
+    <div class="section-label">Tech Stack</div>
+    <h2 class="section-title">Built with modern tools</h2>
+    <div class="stack-row">
+      <div class="stack-item"><span class="stack-emoji">⚡</span><div><strong>Vite 5</strong><span>Bundler & Dev Server</span></div></div>
+      <div class="stack-divider"></div>
+      <div class="stack-item"><span class="stack-emoji">🧪</span><div><strong>Nunjucks</strong><span>Templating Engine</span></div></div>
+      <div class="stack-divider"></div>
+      <div class="stack-item"><span class="stack-emoji">🎨</span><div><strong>Vanilla CSS</strong><span>Custom Design System</span></div></div>
+      <div class="stack-divider"></div>
+      <div class="stack-item"><span class="stack-emoji">🌐</span><div><strong>HTML5</strong><span>Semantic Markup</span></div></div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+  <footer>
+  <p>© 2026 DevStudio. All rights reserved.</p>
+</footer>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
