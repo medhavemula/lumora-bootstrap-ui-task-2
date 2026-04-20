@@ -19,13 +19,21 @@ layout.njk          ← base layout
 partials/
 
 navbar.njk
+
 footer.njk
+
 assets/
+
 style.css
+
 index.html            ← uses {% extends "layout.njk" %}
+
 about.html
+
 contact.html
+
 dist/                   ← compiled output (deployed to GitHub Pages)
+
 ## How to Run
 ```bash
 npm install
